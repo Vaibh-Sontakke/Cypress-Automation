@@ -14,6 +14,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run testAddToCart
+        
+      - uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome HTML Reoprt
+            path: cypress/reports/html
 
  Registration-run:
     runs-on: ubuntu-latest
@@ -27,6 +32,11 @@ jobs:
         with:
           command: npm run testRegistration
 
+      - uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome HTML Reoprt
+            path: cypress/reports/html
+
  SampleTest-run:
     runs-on: ubuntu-latest
     steps:
@@ -38,3 +48,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run testSample
+
+      - uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome HTML Reoprt
+            path: cypress/reports/html
