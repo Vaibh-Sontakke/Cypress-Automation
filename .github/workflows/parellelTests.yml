@@ -15,7 +15,9 @@ jobs:
         with:
           command: npm run testAddToCart
         
-      - uses: actions/upload-artifact@v4
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
             name: Mochawesome HTML Reoprt - AddToCart
             path: cypress/reports/html
@@ -32,7 +34,9 @@ jobs:
         with:
           command: npm run testRegistration
 
-      - uses: actions/upload-artifact@v4
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
             name: Mochawesome HTML Reoprt - Regestration
             path: cypress/reports/html
@@ -49,7 +53,9 @@ jobs:
         with:
           command: npm run testSample
 
-      - uses: actions/upload-artifact@v4
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
             name: Mochawesome HTML Reoprt - Sample Test
             path: cypress/reports/html
