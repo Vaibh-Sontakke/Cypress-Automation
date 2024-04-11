@@ -17,7 +17,7 @@ jobs:
         
       - uses: actions/upload-artifact@v4
         with:
-            name: Mochawesome HTML Reoprt
+            name: Mochawesome HTML Reoprt - AddToCart
             path: cypress/reports/html
 
  Registration-run:
@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-            name: Mochawesome HTML Reoprt
+            name: Mochawesome HTML Reoprt - Regestration
             path: cypress/reports/html
 
  SampleTest-run:
@@ -51,5 +51,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-            name: Mochawesome HTML Reoprt
+            name: Mochawesome HTML Reoprt - Sample Test
             path: cypress/reports/html
