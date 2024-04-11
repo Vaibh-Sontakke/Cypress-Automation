@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "testAddToCart": "npx cypress run --spec cypress/integration/tests/addToCartTest.cy.js",
+    "testRegistration": "npx cypress run --spec cypress/integration/tests/registrationTest.cy.js",
+    "testSample": "npx cypress run --spec cypress/integration/tests/test.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
