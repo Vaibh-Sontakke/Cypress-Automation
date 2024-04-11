@@ -12,3 +12,5 @@ Slack Integreation for report sending:
 5. Goto Github > Settings > Secreats and Variables > Actions > Create a secrete key and give the url and name
 6. Now, Go to the yml file in which you need to pass this secrete key
 7. And in SLACK_MESSAGE attribute you need pass the you run url which will specific to that run for example "Test Report at here: https://github.com/Vaibh-Sontakke/Cypress-Automation/actions/runs/${{github.run_id}}"
+
+Reference Video: https://www.youtube.com/watch?v=3jhm_K_ZMco&list=PLUPlX-9QUIrMZsnv69WfCiF15PJUV84Gj&index=6
