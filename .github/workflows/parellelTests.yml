@@ -3,7 +3,7 @@ name: Parellel Tests
 on: push
 
 jobs:
- AddToCart-run:                    # Test name
+ AddToCart-run:                           # Test name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run testAddToCart   # specifc file
+          command: npm run testAddToCart      # specifc file
         
       - name: Cypress Test Report
         if: always()
